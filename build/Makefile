@@ -37,6 +37,7 @@ CFLAGS+=-I ../inc \
 		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608 \
 		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/utilities \
 		-D GCC_ARMCM4 \
+		-D CPU_LPC54608J512BD208 \
 		-D inline=
 
 VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}
