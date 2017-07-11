@@ -30,7 +30,14 @@ RTOS_SOURCE_DIR=../sdk/SDK_2.2_LPCXpresso54608/rtos/freertos_9.0.0/Source
 SDK_DEVICE_DIR=../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso
 APP_SOURCE_DIR=../src
 
-CFLAGS+=-I ../inc -I . -I ${RTOS_SOURCE_DIR}/include -I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F -D GCC_ARMCM4 -D inline=
+CFLAGS+=-I ../inc \
+        -I . \
+		-I ${RTOS_SOURCE_DIR}/include \
+		-I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F \
+		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608 \
+		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/utilities \
+		-D GCC_ARMCM4 \
+		-D inline=
 
 VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}
 
