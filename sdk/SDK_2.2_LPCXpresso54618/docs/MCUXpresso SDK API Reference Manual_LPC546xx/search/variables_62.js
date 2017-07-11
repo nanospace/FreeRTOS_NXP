@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['base',['base',['../group__dma.html#a84d667acc1301d6d56ae52573e4b6b87',1,'dma_handle_t::base()'],['../group__dmic__dma__driver.html#a1727f5ed3cff1bcca6b73f062e5f9b0c',1,'_dmic_dma_handle::base()'],['../group__i2c__freertos__driver.html#a7bea8caaad98edc94b9d6bb5161bda77',1,'i2c_rtos_handle_t::base()'],['../group__spi__freertos__driver.html#ad3f15e078040cf1bd904907745e27eb6',1,'spi_rtos_handle_t::base()'],['../group__usart__dma__driver.html#ae9aae3e4298a725621990e5dcf91dc17',1,'_usart_dma_handle::base()'],['../group__usart__freertos__driver.html#ac2c11e2f563e88fd7235fd1c04c43695',1,'rtos_usart_config::base()'],['../group__usart__freertos__driver.html#aef0ac7c28d3207c4bd2a605d32163987',1,'usart_rtos_handle_t::base()'],['../group__sdif.html#abd4cbcb1517ce0a56cacc652d6a824a4',1,'sdif_host_t::base()']]],
+  ['baudrate',['baudrate',['../group__usart__freertos__driver.html#add54d5367186b402624be17d78b85f5c',1,'rtos_usart_config']]],
+  ['baudrate_5fbps',['baudRate_Bps',['../group__i2c__master__driver.html#a2186844dc87bcde999fc12005f4c550a',1,'i2c_master_config_t::baudRate_Bps()'],['../group__spi__driver.html#ae7695987e044d80983fd98a43812b1ea',1,'spi_master_config_t::baudRate_Bps()'],['../group__usart__driver.html#a5d2631bc772901b4114b01770f9bb337',1,'usart_config_t::baudRate_Bps()']]],
+  ['baudratea',['baudRateA',['../group__mcan.html#a0a25f74c063b007fc197a422f5bf12a3',1,'mcan_config_t']]],
+  ['baudrated',['baudRateD',['../group__mcan.html#a7d436fba3cc7b397fa316da1b75b0eca',1,'mcan_config_t']]],
+  ['bitcountperchar',['bitCountPerChar',['../group__usart__driver.html#ab964b3fbce4b824beff770a138fd4b6e',1,'usart_config_t']]],
+  ['blockcount',['blockCount',['../group__sdif.html#a3373dee9ec2aa0e234e4e326c7464563',1,'sdif_data_t']]],
+  ['blocksize',['blockSize',['../group__sdif.html#aaad33a25ee163627fcb8e541f4b90dd2',1,'sdif_data_t']]],
+  ['blue',['blue',['../group__lpc__lcdc.html#ga3aba7c73571c11c3a3ab51dbadd1b1c7',1,'lcdc_cursor_palette_t']]],
+  ['bpp',['bpp',['../group__lpc__lcdc.html#ga5701c037f1c504e6895fb094eb5b14a1',1,'lcdc_config_t']]],
+  ['brs',['brs',['../group__mcan.html#a2055d38d4280700f4ba446a368f1ff78',1,'mcan_tx_buffer_frame_t::brs()'],['../group__mcan.html#a6c26a3c9f19bd806b6c944674473eca6',1,'mcan_rx_buffer_frame_t::brs()']]],
+  ['buf',['buf',['../group__i2c__master__driver.html#a9577474c0c4395355174df2b016108de',1,'_i2c_master_handle::buf()'],['../group__i2c__dma__driver.html#a65c4809f53c5df23e969217ea8daaee9',1,'_i2c_master_dma_handle::buf()']]],
+  ['buff1addr',['buff1Addr',['../group__lpc__enet.html#a881f1deac35ce5d5f9719d3d18a0af8b',1,'enet_rx_bd_struct_t::buff1Addr()'],['../group__lpc__enet.html#a0454f58cca6e2e24f2dfd4684f135190',1,'enet_tx_bd_struct_t::buff1Addr()']]],
+  ['buff2addr',['buff2Addr',['../group__lpc__enet.html#a3db14cbe922895a04a6afe2c859c9951',1,'enet_rx_bd_struct_t::buff2Addr()'],['../group__lpc__enet.html#a77233cda60aae4ed7c152759f808e876',1,'enet_tx_bd_struct_t::buff2Addr()']]],
+  ['buffer',['buffer',['../group__usart__freertos__driver.html#a7ee13e3eb1fe35fc47e6732632305038',1,'rtos_usart_config']]],
+  ['buffer_5fsize',['buffer_size',['../group__usart__freertos__driver.html#a0a13bc07966a8b84553e6010d4ea0e34',1,'rtos_usart_config']]],
+  ['bufferframebuf',['bufferFrameBuf',['../group__mcan.html#a811c434dfe89e550fa505eaed8c582f0',1,'_mcan_handle']]],
+  ['bufferidx',['bufferIdx',['../group__mcan.html#afed20b628ac2f8ee954c4a6c14e212d9',1,'mcan_buffer_transfer_t']]],
+  ['bufferstate',['bufferState',['../group__mcan.html#a584fb2723e024e5fa51a0a8663a9b903',1,'_mcan_handle']]],
+  ['bufflen',['buffLen',['../group__lpc__enet.html#afc185d0272089a9715ce26de9323e652',1,'enet_tx_bd_struct_t']]],
+  ['burstlen',['burstLen',['../group__lpc__enet.html#a3293ceb8c81b28acda54fd101e75fdd0',1,'enet_multiqueue_config_t']]],
+  ['busspeed',['busSpeed',['../group__i2c__slave__driver.html#a14acc40a290c779fde0825f3a8bdbb25',1,'i2c_slave_config_t']]],
+  ['bypass',['bypass',['../group__clock.html#afea389db68e782c99b2fb09776f5a0d4',1,'usb_pll_setup_t']]],
+  ['bytesperframe',['bytesPerFrame',['../group__spi__dma__driver.html#ab83d82c084cba678e9ddb1135f89c29c',1,'_spi_dma_handle']]],
+  ['bytewidth',['byteWidth',['../group__dma.html#a93c1b2f32e5e046cf10ba7e8b1c215ce',1,'dma_xfercfg_t']]]
+];
