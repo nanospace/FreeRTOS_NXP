@@ -36,7 +36,7 @@ CFLAGS+=-I ../inc \
 		-I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F \
 		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608 \
 		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/utilities \
-		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/drivers \		
+#		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/drivers \		
 		-I ../sdk/SDK_2.2_LPCXpresso54608/CMSIS/Include \
 		-D GCC_ARMCM4 \
 		-D CPU_LPC54608J512BD208 \
