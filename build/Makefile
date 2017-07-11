@@ -1,138 +1,87 @@
-#/*
-#    FreeRTOS V9.0.0 - Copyright (C) 2016 Real Time Engineers Ltd.
-#	
+#******************************************************************************
 #
-#    ***************************************************************************
-#     *                                                                       *
-#     *    FreeRTOS tutorial books are available in pdf and paperback.        *
-#     *    Complete, revised, and edited pdf reference manuals are also       *
-#     *    available.                                                         *
-#     *                                                                       *
-#     *    Purchasing FreeRTOS documentation will not only help you, by       *
-#     *    ensuring you get running as quickly as possible and with an        *
-#     *    in-depth knowledge of how to use FreeRTOS, it will also help       *
-#     *    the FreeRTOS project to continue with its mission of providing     *
-#     *    professional grade, cross platform, de facto standard solutions    *
-#     *    for microcontrollers - completely free of charge!                  *
-#     *                                                                       *
-#     *    >>> See http://www.FreeRTOS.org/Documentation for details. <<<     *
-#     *                                                                       *
-#     *    Thank you for using FreeRTOS, and thank you for your support!      *
-#     *                                                                       *
-#    ***************************************************************************
+# Makefile - Rules for building the driver library and examples.
 #
+# Copyright (c) 2005,2006 Luminary Micro, Inc.  All rights reserved.
 #
-#    This file is part of the FreeRTOS distribution.
+# Software License Agreement
 #
-#    FreeRTOS is free software; you can redistribute it and/or modify it under
-#    the terms of the GNU General Public License (version 2) as published by the
-#    Free Software Foundation AND MODIFIED BY the FreeRTOS exception.
-#    >>>NOTE<<< The modification to the GPL is included to allow you to
-#    distribute a combined work that includes FreeRTOS without being obliged to
-#    provide the source code for proprietary components outside of the FreeRTOS
-#    kernel.  FreeRTOS is distributed in the hope that it will be useful, but
-#    WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-#    or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
-#    more details. You should have received a copy of the GNU General Public
-#    License and the FreeRTOS license exception along with FreeRTOS; if not it
-#    can be viewed here: http://www.freertos.org/a00114.html and also obtained
-#    by writing to Richard Barry, contact details for whom are available on the
-#    FreeRTOS WEB site.
+# Luminary Micro, Inc. (LMI) is supplying this software for use solely and
+# exclusively on LMI's Stellaris Family of microcontroller products.
 #
-#    1 tab == 4 spaces!
+# The software is owned by LMI and/or its suppliers, and is protected under
+# applicable copyright laws.  All rights are reserved.  Any use in violation
+# of the foregoing restrictions may subject the user to criminal sanctions
+# under applicable laws, as well as to civil liability for the breach of the
+# terms and conditions of this license.
 #
-#    http://www.FreeRTOS.org - Documentation, latest information, license and
-#    contact details.
+# THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+# OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+# LMI SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR
+# CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
 #
-#    http://www.SafeRTOS.com - A version that is certified for use in safety
-#    critical systems.
-#
-#    http://www.OpenRTOS.com - Commercial support, development, porting,
-#    licensing and training services.
-#*/
+#******************************************************************************
+GNU_TOOL_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/bin
 
-CC=arm-elf-gcc
-OBJCOPY=arm-elf-objcopy
-ARCH=arm-elf-ar
-CRT0=boot.s
-WARNINGS=-Wall -Wextra -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-align -Wsign-compare \
-		-Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wunused
+include makedefs
 
-#
-# CFLAGS common to both the THUMB and ARM mode builds
-#
-CFLAGS=$(WARNINGS) -D $(RUN_MODE) -D GCC_ARM7 -I. -I../../Source/include \
-		-I../Common/include $(DEBUG) -mcpu=arm7tdmi -T$(LDSCRIPT) \
-		 $(OPTIM) -fomit-frame-pointer -fno-strict-aliasing -fno-dwarf2-cfi-asm
-
-ifeq ($(USE_THUMB_MODE),YES)
-	CFLAGS += -mthumb-interwork -D THUMB_INTERWORK
-	THUMB_FLAGS=-mthumb
-endif
-
-
-LINKER_FLAGS=-Xlinker -ortosdemo.elf -Xlinker -M -Xlinker -Map=rtosdemo.map
-
-RTOS_SOURCE_DIR=../../Source
+RTOS_SOURCE_DIR=../sdk/SDK_2.2_LPCXpresso54608/rtos/freertos_9.0.0/Source
 DEMO_SOURCE_DIR=../Common/Minimal
-#
-# Source files that can be built to THUMB mode.
-#
-THUMB_SRC = \
-main.c \
-serial/serial.c \
-ParTest/ParTest.c \
-$(DEMO_SOURCE_DIR)/integer.c \
-$(DEMO_SOURCE_DIR)/flash.c \
-$(DEMO_SOURCE_DIR)/PollQ.c \
-$(DEMO_SOURCE_DIR)/comtest.c \
-$(DEMO_SOURCE_DIR)/flop.c \
-$(DEMO_SOURCE_DIR)/semtest.c \
-$(DEMO_SOURCE_DIR)/dynamic.c \
-$(DEMO_SOURCE_DIR)/BlockQ.c \
-$(RTOS_SOURCE_DIR)/tasks.c \
-$(RTOS_SOURCE_DIR)/queue.c \
-$(RTOS_SOURCE_DIR)/list.c \
-$(RTOS_SOURCE_DIR)/portable/MemMang/heap_2.c \
-$(RTOS_SOURCE_DIR)/portable/GCC/ARM7_LPC2000/port.c
 
-#
-# Source files that must be built to ARM mode.
-#
-ARM_SRC = \
-$(RTOS_SOURCE_DIR)/portable/GCC/ARM7_LPC2000/portISR.c \
-serial/serialISR.c
+CFLAGS+=-I hw_include -I . -I ${RTOS_SOURCE_DIR}/include -I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F -I ../Common/include -D GCC_ARMCM3_LM3S102 -D inline=
+
+VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${DEMO_SOURCE_DIR}:init:ParTest:hw_include
+
+
+OBJS= ${COMPILER}/main.o	\
+      ${COMPILER}/pdc.o 	\
+	  ${COMPILER}/list.o    \
+      ${COMPILER}/queue.o   \
+      ${COMPILER}/tasks.o   \
+      ${COMPILER}/port.o    \
+      ${COMPILER}/heap_1.o  \
+	  ${COMPILER}/ParTest.o \
+	  ${COMPILER}/crflash.o \
+	  ${COMPILER}/croutine.o
+#	  ${COMPILER}/pendsv_handler.o
+
+INIT_OBJS= ${COMPILER}/startup.o
+
+LIBS= hw_include/libdriver.a
+
 
 #
-# Define all object files.
+# The default rule, which causes init to be built.
 #
-ARM_OBJ = $(ARM_SRC:.c=.o)
-THUMB_OBJ = $(THUMB_SRC:.c=.o)
+all: ${COMPILER}           \
+     ${COMPILER}/RTOSDemo.axf \
+	 
+#
+# The rule to clean out all the build products
+#
 
-rtosdemo.hex : rtosdemo.elf
-	$(OBJCOPY) rtosdemo.elf -O ihex rtosdemo.hex
-
-rtosdemo.elf : $(ARM_OBJ) $(THUMB_OBJ) $(CRT0) Makefile
-	$(CC) $(CFLAGS) $(ARM_OBJ) $(THUMB_OBJ) -nostartfiles $(CRT0) $(LINKER_FLAGS)
-
-$(THUMB_OBJ) : %.o : %.c $(LDSCRIPT) Makefile
-	$(CC) -c $(THUMB_FLAGS) $(CFLAGS) $< -o $@
-
-$(ARM_OBJ) : %.o : %.c $(LDSCRIPT) Makefile
-	$(CC) -c $(CFLAGS) $< -o $@
-
-clean :
-	rm -rf $(ARM_OBJ) $(THUMB_OBJ)
-	touch Makefile
-
-
-
-
-
-
-
-
-
+clean:
+	@rm -rf ${COMPILER} ${wildcard *.bin} RTOSDemo.axf
 	
+#
+# The rule to create the target directory
+#
+${COMPILER}:
+	@mkdir ${COMPILER}
+
+${COMPILER}/RTOSDemo.axf: ${INIT_OBJS} ${OBJS} ${LIBS}
+SCATTER_RTOSDemo=standalone.ld
+ENTRY_RTOSDemo=ResetISR
+
+#
+#
+# Include the automatically generated dependency files.
+#
+-include ${wildcard ${COMPILER}/*.d} __dummy__
+
+
+	 
+
 
 
