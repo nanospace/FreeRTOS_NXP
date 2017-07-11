@@ -27,28 +27,31 @@ GNU_TOOL_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/bin
 include makedefs
 
 RTOS_SOURCE_DIR=../sdk/SDK_2.2_LPCXpresso54608/rtos/freertos_9.0.0/Source
-DEMO_SOURCE_DIR=../Common/Minimal
+SDK_DEVICE_DIR=../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso
+APP_SOURCE_DIR=../src
 
 CFLAGS+=-I hw_include -I . -I ${RTOS_SOURCE_DIR}/include -I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F -I ../Common/include -D GCC_ARMCM3_LM3S102 -D inline=
 
-VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${DEMO_SOURCE_DIR}:init:ParTest:hw_include
+VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}
 
 
 OBJS= ${COMPILER}/main.o	\
-      ${COMPILER}/pdc.o 	\
+      ${COMPILER}/board.o   \
+	  ${COMPILER}/clock_config.o \
+	  ${COMPILER}/pin_mux.o \
 	  ${COMPILER}/list.o    \
       ${COMPILER}/queue.o   \
       ${COMPILER}/tasks.o   \
       ${COMPILER}/port.o    \
       ${COMPILER}/heap_1.o  \
-	  ${COMPILER}/ParTest.o \
-	  ${COMPILER}/crflash.o \
+	  ${COMPILER}/event_groups.o \
+	  ${COMPILER}/timers.o  \
 	  ${COMPILER}/croutine.o
 #	  ${COMPILER}/pendsv_handler.o
 
-INIT_OBJS= ${COMPILER}/startup.o
+INIT_OBJS= ${COMPILER}/startup_LPC54608.o
 
-LIBS= hw_include/libdriver.a
+LIBS= ${SDK_DEVICE_DIR}/libfsl_power_lib.a ${SDK_DEVICE_DIR}/libfsl_power_lib_softabi.a
 
 
 #
