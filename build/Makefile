@@ -63,7 +63,7 @@ OBJS= ${COMPILER}/main.o	\
 
 INIT_OBJS= ${COMPILER}/startup_LPC54608.o
 
-LIBS= ${SDK_DEVICE_DIR}/libfsl_power_lib.a ${SDK_DEVICE_DIR}/libfsl_power_lib_softabi.a
+LIBS= ${SDK_DEVICE_DIR}/mcuxpresso/libfsl_power_lib.a ${SDK_DEVICE_DIR}/mcuxpresso/libfsl_power_lib_softabi.a
 
 
 #
