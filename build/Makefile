@@ -30,6 +30,7 @@ SDK_DIR=../sdk/SDK_2.2_LPCXpresso54608
 RTOS_SOURCE_DIR=${SDK_DIR}/rtos/freertos_9.0.0/Source
 SDK_DEVICE_DIR=$(SDK_DIR)/devices/LPC54608
 SDK_CMSIS_DIR=${SDK_DIR}/CMSIS
+#GCC_LIB_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
 APP_SOURCE_DIR=../src
 
 CFLAGS+=-I ../inc \

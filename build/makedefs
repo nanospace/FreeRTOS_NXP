@@ -52,18 +52,23 @@ ifeq (${COMPILER}, gcc)
 # The command for calling the compiler.
 #
 CC=${GNU_TOOL_DIR}/arm-none-eabi-gcc
+#CC=arm-none-eabi-gcc
 
 #
 # The flags passed to the assembler.
 #
 AFLAGS=-mthumb         \
+       -march=armv7e-m \
        -mcpu=cortex-m4 \
+       -mfloat-abi=hard \
+       -mfpu=fpv4-sp-d16 \
        -MD
 
 #
 # The flags passed to the compiler.
 #
 CFLAGS=-mthumb         \
+       -march=armv7e-m \
        -mcpu=cortex-m4 \
        -mfloat-abi=hard \
        -mfpu=fpv4-sp-d16 \
@@ -74,31 +79,35 @@ CFLAGS=-mthumb         \
 # The command for calling the library archiver.
 #
 AR=${GNU_TOOL_DIR}/arm-none-eabi-ar
+#AR=arm-none-eabi-ar
 
 #
 # The command for calling the linker.
 #
 LD=${GNU_TOOL_DIR}/arm-none-eabi-ld
+#LD=arm-none-eabi-ld
 
 #
 # The flags passed to the linker.
 #
-LDFLAGS= -Map gcc/out.map
+#LDFLAGS= -lc -L /usr/lib/gcc/arm-none-eabi/4.8.2/armv7e-m/
+LDFLAGS= 
 
 #
 # Get the location of libgcc.a from the GCC front-end.
 #
-LIBGCC=${shell ${CC} -mthumb -march=armv7-m -print-libgcc-file-name}
+LIBGCC=${shell ${CC} -mthumb -march=armv7e-m -print-libgcc-file-name}
 
 #
 # Get the location of libc.a from the GCC front-end.
 #
-LIBC=${shell ${CC} -mthumb -march=armv7-m -print-file-name=libc.a}
+LIBC=${shell ${CC} -mthumb -march=armv7e-m -print-file-name=libc.a}
 
 #
 # The command for extracting images from the linked executables.
 #
 OBJCOPY=${GNU_TOOL_DIR}/arm-none-eabi-objcopy
+#OBJCOPY=arm-none-eabi-objcopy
 
 endif
 
@@ -178,18 +187,16 @@ ${COMPILER}/%.axf:
 	     echo "  LD    ${@}";  \
 	 fi
 ifeq (${COMPILER}, gcc)
-	@if [ 'x${VERBOSE}' != x ];                           \
+	@if [ 'x${VERBOSE}' = x ];                           \
 	 then                                                 \
-	     echo ${LD} -T ${SCATTER_${notdir ${@:.axf=}}}    \
+	     echo ${CC} -T ${SCATTER_${notdir ${@:.axf=}}}    \
 	                --entry ${ENTRY_${notdir ${@:.axf=}}} \
 	                ${LDFLAGSgcc_${notdir ${@:.axf=}}}    \
-	                ${LDFLAGS} -o ${@} ${^}               \
-	                '${LIBC}' '${LIBGCC}';                \
+	                ${LDFLAGS} -o ${@} ${^}    ;           \
 	 fi
-	@${LD} -T ${SCATTER_${notdir ${@:.axf=}}}    \
+	@${CC} -T ${SCATTER_${notdir ${@:.axf=}}}    \
 	       --entry ${ENTRY_${notdir ${@:.axf=}}} \
 	       ${LDFLAGSgcc_${notdir ${@:.axf=}}}    \
-	       ${LDFLAGS} -o ${@} ${^}               \
-	       '${LIBC}' '${LIBGCC}'
+	       ${LDFLAGS} -o ${@} ${^}               
 	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
 endif
