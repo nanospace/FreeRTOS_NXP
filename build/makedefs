@@ -65,6 +65,8 @@ AFLAGS=-mthumb         \
 #
 CFLAGS=-mthumb         \
        -mcpu=cortex-m4 \
+       -mfloat-abi=hard \
+       -mfpu=fpv4-sp-d16 \
        -O2             \
        -MD
 
