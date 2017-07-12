@@ -44,7 +44,7 @@ CFLAGS+=-I ../inc \
 		-D CPU_LPC54608J512BD208 \
 		-D inline=
 
-VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}/mcuxpresso
+VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}:${SDK_DEVICE_DIR}/mcuxpresso:${SDK_DEVICE_DIR}/drivers:${SDK_DEVICE_DIR}/utilities
 
 
 OBJS= ${COMPILER}/main.o	\
@@ -58,12 +58,20 @@ OBJS= ${COMPILER}/main.o	\
       ${COMPILER}/heap_1.o  \
 	  ${COMPILER}/event_groups.o \
 	  ${COMPILER}/timers.o  \
+	  ${COMPILER}/fsl_clock.o  \
+	  ${COMPILER}/fsl_reset.o  \
+	  ${COMPILER}/fsl_emc.o  \
+	  ${COMPILER}/fsl_usart.o  \
+	  ${COMPILER}/fsl_flexcomm.o  \
+          ${COMPILER}/fsl_debug_console.o \
+          ${COMPILER}/system_LPC54608.o \
+          ${COMPILER}/fsl_tickless_rtc.o \
 	  ${COMPILER}/croutine.o
 #	  ${COMPILER}/pendsv_handler.o
 
 INIT_OBJS= ${COMPILER}/startup_LPC54608.o
 
-LIBS= ${SDK_DEVICE_DIR}/libfsl_power_lib.a ${SDK_DEVICE_DIR}/libfsl_power_lib_softabi.a
+LIBS= ${SDK_DEVICE_DIR}/mcuxpresso/libfsl_power_lib.a ${SDK_DEVICE_DIR}/mcuxpresso/libfsl_power_lib_softabi.a
 
 
 #
