@@ -94,7 +94,7 @@ ${COMPILER}:
 	@mkdir ${COMPILER}
 
 ${COMPILER}/RTOSDemo.axf: ${INIT_OBJS} ${OBJS} ${LIBS}
-SCATTER_RTOSDemo=standalone.ld
+SCATTER_RTOSDemo=lpc54606.ld
 ENTRY_RTOSDemo=ResetISR
 
 #
