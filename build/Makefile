@@ -26,21 +26,25 @@ GNU_TOOL_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/bin
 
 include makedefs
 
-RTOS_SOURCE_DIR=../sdk/SDK_2.2_LPCXpresso54608/rtos/freertos_9.0.0/Source
-SDK_DEVICE_DIR=../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso
+SDK_DIR=../sdk/SDK_2.2_LPCXpresso54608
+RTOS_SOURCE_DIR=${SDK_DIR}/rtos/freertos_9.0.0/Source
+SDK_DEVICE_DIR=$(SDK_DIR)/devices/LPC54608
+SDK_CMSIS_DIR=${SDK_DIR}/CMSIS
 APP_SOURCE_DIR=../src
 
 CFLAGS+=-I ../inc \
         -I . \
 		-I ${RTOS_SOURCE_DIR}/include \
 		-I ${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F \
-		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608 \
-		-I ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/utilities \
+		-I ${SDK_DEVICE_DIR} \
+		-I ${SDK_CMSIS_DIR}/Include \
+		-I ${SDK_DEVICE_DIR}/utilities \
+		-I ${SDK_DEVICE_DIR}/drivers \
 		-D GCC_ARMCM4 \
 		-D CPU_LPC54608J512BD208 \
 		-D inline=
 
-VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}
+VPATH=${RTOS_SOURCE_DIR}:${RTOS_SOURCE_DIR}/portable/MemMang:${RTOS_SOURCE_DIR}/portable/GCC/ARM_CM4F:${APP_SOURCE_DIR}:${SDK_DEVICE_DIR}/mcuxpresso
 
 
 OBJS= ${COMPILER}/main.o	\
