@@ -24,6 +24,8 @@
 #******************************************************************************
 GNU_TOOL_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/bin
 
+GCC_LIB_DIR=../tools/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
+
 include makedefs
 
 SDK_DIR=../sdk/SDK_2.2_LPCXpresso54608
@@ -65,6 +67,7 @@ OBJS= ${COMPILER}/main.o	\
 	  ${COMPILER}/fsl_usart.o  \
 	  ${COMPILER}/fsl_flexcomm.o  \
           ${COMPILER}/fsl_debug_console.o \
+          ${COMPILER}/fsl_common.o  \
           ${COMPILER}/system_LPC54608.o \
           ${COMPILER}/fsl_tickless_rtc.o \
 	  ${COMPILER}/croutine.o
