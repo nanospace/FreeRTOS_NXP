@@ -91,7 +91,7 @@ LD=${GNU_TOOL_DIR}/arm-none-eabi-ld
 # The flags passed to the linker.
 #
 #LDFLAGS= -lc -L /usr/lib/gcc/arm-none-eabi/4.8.2/armv7e-m/
-LDFLAGS= 
+LDFLAGS= -nostdlib -L ../libs -Xlinker -Map="lpc54606.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -march=armv7e-m -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb 
 
 #
 # Get the location of libgcc.a from the GCC front-end.
