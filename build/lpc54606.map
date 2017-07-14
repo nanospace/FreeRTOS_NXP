@@ -1,0 +1,948 @@
+Archive member included to satisfy reference by file (symbol)
+
+../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                              gcc/clock_config.o (POWER_SetVoltageForFreq)
+../libs/libcr_c.a(memcpy.o)   gcc/queue.o (memcpy)
+../libs/libcr_c.a(memset.o)   gcc/tasks.o (memset)
+../libs/libcr_c.a(strlen.o)   gcc/fsl_debug_console.o (strlen)
+../libs/libcr_eabihelpers.a(division_64.o)
+                              gcc/fsl_clock.o (__aeabi_uldivmod)
+../libs/libcr_eabihelpers.a(division_idiv0.o)
+                              ../libs/libcr_eabihelpers.a(division_64.o) (__aeabi_idiv0)
+../libs/libcr_eabihelpers.a(memcpy.o)
+                              ../libs/libcr_c.a(memcpy.o) (__aeabi_memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+xQueueRegistry      0x40              gcc/queue.o
+gPllSetupCacheStruct
+                    0x38              gcc/fsl_clock.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 gcc/startup_LPC54608.o
+ .bss           0x0000000000000000        0x0 gcc/startup_LPC54608.o
+ .after_vectors.init_data
+                0x0000000000000000       0x1c gcc/startup_LPC54608.o
+ .after_vectors.init_bss
+                0x0000000000000000       0x18 gcc/startup_LPC54608.o
+ .crp           0x0000000000000000        0x4 gcc/startup_LPC54608.o
+ .data          0x0000000000000000        0x0 gcc/main.o
+ .data          0x0000000000000000        0x0 gcc/board.o
+ .bss           0x0000000000000000        0x0 gcc/board.o
+ .data          0x0000000000000000        0x0 gcc/clock_config.o
+ .bss           0x0000000000000000        0x0 gcc/clock_config.o
+ .data          0x0000000000000000        0x0 gcc/pin_mux.o
+ .bss           0x0000000000000000        0x0 gcc/pin_mux.o
+ .data          0x0000000000000000        0x0 gcc/list.o
+ .bss           0x0000000000000000        0x0 gcc/list.o
+ .data          0x0000000000000000        0x0 gcc/queue.o
+ .bss           0x0000000000000000        0x0 gcc/queue.o
+ .data          0x0000000000000000        0x0 gcc/tasks.o
+ .rodata        0x0000000000000000       0x10 gcc/tasks.o
+ .data          0x0000000000000000        0x0 gcc/heap_1.o
+ .text          0x0000000000000000      0x384 gcc/event_groups.o
+ .data          0x0000000000000000        0x0 gcc/event_groups.o
+ .bss           0x0000000000000000        0x0 gcc/event_groups.o
+ .comment       0x0000000000000000       0x80 gcc/event_groups.o
+ .ARM.attributes
+                0x0000000000000000       0x39 gcc/event_groups.o
+ .data          0x0000000000000000        0x0 gcc/timers.o
+ .data          0x0000000000000000        0x0 gcc/fsl_clock.o
+ .data          0x0000000000000000        0x0 gcc/fsl_reset.o
+ .bss           0x0000000000000000        0x0 gcc/fsl_reset.o
+ .data          0x0000000000000000        0x0 gcc/fsl_emc.o
+ .bss           0x0000000000000000        0x0 gcc/fsl_emc.o
+ .data          0x0000000000000000        0x0 gcc/fsl_usart.o
+ .bss           0x0000000000000000        0x0 gcc/fsl_usart.o
+ .text.unlikely
+                0x0000000000000000       0x1c gcc/fsl_usart.o
+ .data          0x0000000000000000        0x0 gcc/fsl_flexcomm.o
+ .data          0x0000000000000000        0x0 gcc/fsl_debug_console.o
+ .data          0x0000000000000000        0x0 gcc/fsl_common.o
+ .bss           0x0000000000000000        0x0 gcc/fsl_common.o
+ .text          0x0000000000000000      0x1e0 gcc/system_LPC54608.o
+ .bss           0x0000000000000000        0x0 gcc/system_LPC54608.o
+ .rodata        0x0000000000000000       0x20 gcc/system_LPC54608.o
+ .data          0x0000000000000000        0x0 gcc/fsl_tickless_rtc.o
+ .bss           0x0000000000000000        0x0 gcc/fsl_tickless_rtc.o
+ .text          0x0000000000000000        0x0 gcc/croutine.o
+ .data          0x0000000000000000        0x0 gcc/croutine.o
+ .bss           0x0000000000000000        0x0 gcc/croutine.o
+ .comment       0x0000000000000000       0x80 gcc/croutine.o
+ .ARM.attributes
+                0x0000000000000000       0x39 gcc/croutine.o
+ .text          0x0000000000000000        0x0 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .data          0x0000000000000000        0x0 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .bss           0x0000000000000000        0x0 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.DeepSleepReloc
+                0x0000000000000000      0x164 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_setVdLevel
+                0x0000000000000000       0x10 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_setLpVdLevel
+                0x0000000000000000       0x48 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_EnterSleep
+                0x0000000000000000       0x1c ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_EnterDeepSleep
+                0x0000000000000000       0x34 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_EnterDeepPowerDown
+                0x0000000000000000       0x3c ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_EnterPowerMode
+                0x0000000000000000       0x20 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_SetLowPowerVoltageForFreq
+                0x0000000000000000       0x3c ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text.POWER_GetLibVersion
+                0x0000000000000000        0x6 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .bss.relocMem.6637
+                0x0000000000000000      0x800 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_c.a(memcpy.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_c.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_c.a(memcpy.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_c.a(memset.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_c.a(memset.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_c.a(memset.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_c.a(strlen.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_c.a(strlen.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_c.a(strlen.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_64.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_64.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_64.o)
+ .text.__aeabi_division_ldivmod
+                0x0000000000000000       0x26 ../libs/libcr_eabihelpers.a(division_64.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_idiv0.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_idiv0.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(division_idiv0.o)
+ .text          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(memcpy.o)
+ .data          0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 ../libs/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memmove
+                0x0000000000000000       0x1c ../libs/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memclr
+                0x0000000000000000        0x8 ../libs/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset
+                0x0000000000000000        0xa ../libs/libcr_eabihelpers.a(memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+PROGRAM_FLASH    0x0000000000000000 0x0000000000080000 xr
+BOARD_FLASH      0x0000000010000000 0x0000000001000000 xr
+SRAM_0_1_2_3     0x0000000020000000 0x0000000000028000 xrw
+SRAMX            0x0000000004000000 0x0000000000008000 xrw
+USB_RAM          0x0000000040100000 0x0000000000002000 xrw
+BOARD_SDRAM      0x00000000a0000000 0x0000000001000000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD gcc/startup_LPC54608.o
+LOAD gcc/main.o
+LOAD gcc/board.o
+LOAD gcc/clock_config.o
+LOAD gcc/pin_mux.o
+LOAD gcc/list.o
+LOAD gcc/queue.o
+LOAD gcc/tasks.o
+LOAD gcc/port.o
+LOAD gcc/heap_1.o
+LOAD gcc/event_groups.o
+LOAD gcc/timers.o
+LOAD gcc/fsl_clock.o
+LOAD gcc/fsl_reset.o
+LOAD gcc/fsl_emc.o
+LOAD gcc/fsl_usart.o
+LOAD gcc/fsl_flexcomm.o
+LOAD gcc/fsl_debug_console.o
+LOAD gcc/fsl_common.o
+LOAD gcc/system_LPC54608.o
+LOAD gcc/fsl_tickless_rtc.o
+LOAD gcc/croutine.o
+LOAD ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a
+LOAD ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib_softabi.a
+START GROUP
+LOAD ../libs/libcr_semihost_nf.a
+LOAD ../libs/libcr_c.a
+LOAD ../libs/libcr_eabihelpers.a
+LOAD ../tools/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/libgcc.a
+END GROUP
+                0x0000000000000000                __base_PROGRAM_FLASH = 0x0
+                0x0000000000000000                __base_Flash = 0x0
+                0x0000000000080000                __top_PROGRAM_FLASH = 0x80000
+                0x0000000000080000                __top_Flash = 0x80000
+                0x0000000010000000                __base_BOARD_FLASH = 0x10000000
+                0x0000000010000000                __base_Flash2 = 0x10000000
+                0x0000000011000000                __top_BOARD_FLASH = 0x11000000
+                0x0000000011000000                __top_Flash2 = 0x11000000
+                0x0000000020000000                __base_SRAM_0_1_2_3 = 0x20000000
+                0x0000000020000000                __base_RAM = 0x20000000
+                0x0000000020028000                __top_SRAM_0_1_2_3 = 0x20028000
+                0x0000000020028000                __top_RAM = 0x20028000
+                0x0000000004000000                __base_SRAMX = 0x4000000
+                0x0000000004000000                __base_RAM2 = 0x4000000
+                0x0000000004008000                __top_SRAMX = 0x4008000
+                0x0000000004008000                __top_RAM2 = 0x4008000
+                0x0000000040100000                __base_USB_RAM = 0x40100000
+                0x0000000040100000                __base_RAM3 = 0x40100000
+                0x0000000040102000                __top_USB_RAM = 0x40102000
+                0x0000000040102000                __top_RAM3 = 0x40102000
+                0x00000000a0000000                __base_BOARD_SDRAM = 0xa0000000
+                0x00000000a0000000                __base_RAM4 = 0xa0000000
+                0x00000000a1000000                __top_BOARD_SDRAM = 0xa1000000
+                0x00000000a1000000                __top_RAM4 = 0xa1000000
+
+.text_Flash2    0x0000000010000000        0x0
+ FILL mask 0xff
+ *(.text_Flash2*)
+ *(.text_BOARD_FLASH*)
+ *(.text.$Flash2*)
+ *(.text.$BOARD_FLASH*)
+ *(.rodata.$Flash2*)
+ *(.rodata.$BOARD_FLASH*)
+
+.text           0x0000000000000000     0x757c
+ FILL mask 0xff
+                0x0000000000000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000      0x124 gcc/startup_LPC54608.o
+                0x0000000000000000                __Vectors
+                0x0000000000000000                g_pfnVectors
+                0x0000000000000124                . = ALIGN (0x4)
+                0x0000000000000124                __section_table_start = .
+                0x0000000000000124                __data_section_table = .
+                0x0000000000000124        0x4 LONG 0x757c LOADADDR (.data)
+                0x0000000000000128        0x4 LONG 0x20000000 ADDR (.data)
+                0x000000000000012c        0x4 LONG 0x8 SIZEOF (.data)
+                0x0000000000000130        0x4 LONG 0x757c LOADADDR (.data_RAM2)
+                0x0000000000000134        0x4 LONG 0x4000000 ADDR (.data_RAM2)
+                0x0000000000000138        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000000000013c        0x4 LONG 0x757c LOADADDR (.data_RAM3)
+                0x0000000000000140        0x4 LONG 0x40100000 ADDR (.data_RAM3)
+                0x0000000000000144        0x4 LONG 0x0 SIZEOF (.data_RAM3)
+                0x0000000000000148        0x4 LONG 0x757c LOADADDR (.data_RAM4)
+                0x000000000000014c        0x4 LONG 0xa0000000 ADDR (.data_RAM4)
+                0x0000000000000150        0x4 LONG 0x0 SIZEOF (.data_RAM4)
+                0x0000000000000154                __data_section_table_end = .
+                0x0000000000000154                __bss_section_table = .
+                0x0000000000000154        0x4 LONG 0x20000008 ADDR (.bss)
+                0x0000000000000158        0x4 LONG 0x2a60 SIZEOF (.bss)
+                0x000000000000015c        0x4 LONG 0x4000000 ADDR (.bss_RAM2)
+                0x0000000000000160        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x0000000000000164        0x4 LONG 0x40100000 ADDR (.bss_RAM3)
+                0x0000000000000168        0x4 LONG 0x0 SIZEOF (.bss_RAM3)
+                0x000000000000016c        0x4 LONG 0xa0000000 ADDR (.bss_RAM4)
+                0x0000000000000170        0x4 LONG 0x0 SIZEOF (.bss_RAM4)
+                0x0000000000000174                __bss_section_table_end = .
+                0x0000000000000174                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x0000000000000174       0x28 gcc/startup_LPC54608.o
+                0x0000000000000174                NMI_Handler
+                0x0000000000000178                HardFault_Handler
+                0x000000000000017c                MemManage_Handler
+                0x0000000000000180                BusFault_Handler
+                0x0000000000000184                UsageFault_Handler
+                0x000000000000018c                DebugMon_Handler
+                0x0000000000000198                DMA0_DriverIRQHandler
+                0x0000000000000198                EEPROM_DriverIRQHandler
+                0x0000000000000198                RIT_DriverIRQHandler
+                0x0000000000000198                CAN0_IRQ0_DriverIRQHandler
+                0x0000000000000198                PIN_INT3_DriverIRQHandler
+                0x0000000000000198                PIN_INT2_DriverIRQHandler
+                0x0000000000000198                ETHERNET_DriverIRQHandler
+                0x0000000000000198                PIN_INT0_DriverIRQHandler
+                0x0000000000000198                CTIMER2_DriverIRQHandler
+                0x0000000000000198                SPIFI0_DriverIRQHandler
+                0x0000000000000198                IntDefaultHandler
+                0x0000000000000198                USB0_DriverIRQHandler
+                0x0000000000000198                MRT0_DriverIRQHandler
+                0x0000000000000198                UTICK0_DriverIRQHandler
+                0x0000000000000198                DMIC0_DriverIRQHandler
+                0x0000000000000198                PIN_INT4_DriverIRQHandler
+                0x0000000000000198                PIN_INT5_DriverIRQHandler
+                0x0000000000000198                CAN1_IRQ0_DriverIRQHandler
+                0x0000000000000198                Reserved47_DriverIRQHandler
+                0x0000000000000198                ADC0_THCMP_DriverIRQHandler
+                0x0000000000000198                CTIMER4_DriverIRQHandler
+                0x0000000000000198                GINT1_DriverIRQHandler
+                0x0000000000000198                PIN_INT7_DriverIRQHandler
+                0x0000000000000198                CAN0_IRQ1_DriverIRQHandler
+                0x0000000000000198                USB0_NEEDCLK_DriverIRQHandler
+                0x0000000000000198                ADC0_SEQB_DriverIRQHandler
+                0x0000000000000198                CTIMER0_DriverIRQHandler
+                0x0000000000000198                CTIMER1_DriverIRQHandler
+                0x0000000000000198                PIN_INT6_DriverIRQHandler
+                0x0000000000000198                ETHERNET_MACLP_DriverIRQHandler
+                0x0000000000000198                PIN_INT1_DriverIRQHandler
+                0x0000000000000198                CTIMER3_DriverIRQHandler
+                0x0000000000000198                HWVAD0_DriverIRQHandler
+                0x0000000000000198                RTC_DriverIRQHandler
+                0x0000000000000198                LCD_DriverIRQHandler
+                0x0000000000000198                ETHERNET_PMT_DriverIRQHandler
+                0x0000000000000198                USB1_DriverIRQHandler
+                0x0000000000000198                CAN1_IRQ1_DriverIRQHandler
+                0x0000000000000198                ADC0_SEQA_DriverIRQHandler
+                0x0000000000000198                USB1_NEEDCLK_DriverIRQHandler
+                0x0000000000000198                SMARTCARD0_DriverIRQHandler
+                0x0000000000000198                SDIO_DriverIRQHandler
+                0x0000000000000198                SHA_DriverIRQHandler
+                0x0000000000000198                GINT0_DriverIRQHandler
+                0x0000000000000198                SMARTCARD1_DriverIRQHandler
+                0x0000000000000198                Reserved46_DriverIRQHandler
+                0x0000000000000198                WDT_BOD_DriverIRQHandler
+                0x0000000000000198                SCT0_DriverIRQHandler
+ .after_vectors.reset
+                0x000000000000019c       0xa0 gcc/startup_LPC54608.o
+                0x000000000000019c                ResetISR
+ *(.text*)
+ .text          0x000000000000023c      0x1c8 gcc/startup_LPC54608.o
+                0x000000000000023c                WDT_BOD_IRQHandler
+                0x0000000000000244                DMA0_IRQHandler
+                0x000000000000024c                GINT0_IRQHandler
+                0x0000000000000254                GINT1_IRQHandler
+                0x000000000000025c                PIN_INT0_IRQHandler
+                0x0000000000000264                PIN_INT1_IRQHandler
+                0x000000000000026c                PIN_INT2_IRQHandler
+                0x0000000000000274                PIN_INT3_IRQHandler
+                0x000000000000027c                UTICK0_IRQHandler
+                0x0000000000000284                MRT0_IRQHandler
+                0x000000000000028c                CTIMER0_IRQHandler
+                0x0000000000000294                CTIMER1_IRQHandler
+                0x000000000000029c                SCT0_IRQHandler
+                0x00000000000002a4                CTIMER3_IRQHandler
+                0x00000000000002ac                FLEXCOMM0_IRQHandler
+                0x00000000000002b4                FLEXCOMM1_IRQHandler
+                0x00000000000002bc                FLEXCOMM2_IRQHandler
+                0x00000000000002c4                FLEXCOMM3_IRQHandler
+                0x00000000000002cc                FLEXCOMM4_IRQHandler
+                0x00000000000002d4                FLEXCOMM5_IRQHandler
+                0x00000000000002dc                FLEXCOMM6_IRQHandler
+                0x00000000000002e4                FLEXCOMM7_IRQHandler
+                0x00000000000002ec                ADC0_SEQA_IRQHandler
+                0x00000000000002f4                ADC0_SEQB_IRQHandler
+                0x00000000000002fc                ADC0_THCMP_IRQHandler
+                0x0000000000000304                DMIC0_IRQHandler
+                0x000000000000030c                HWVAD0_IRQHandler
+                0x0000000000000314                USB0_NEEDCLK_IRQHandler
+                0x000000000000031c                USB0_IRQHandler
+                0x0000000000000324                RTC_IRQHandler
+                0x000000000000032c                Reserved46_IRQHandler
+                0x0000000000000334                Reserved47_IRQHandler
+                0x000000000000033c                PIN_INT4_IRQHandler
+                0x0000000000000344                PIN_INT5_IRQHandler
+                0x000000000000034c                PIN_INT6_IRQHandler
+                0x0000000000000354                PIN_INT7_IRQHandler
+                0x000000000000035c                CTIMER2_IRQHandler
+                0x0000000000000364                CTIMER4_IRQHandler
+                0x000000000000036c                RIT_IRQHandler
+                0x0000000000000374                SPIFI0_IRQHandler
+                0x000000000000037c                FLEXCOMM8_IRQHandler
+                0x0000000000000384                FLEXCOMM9_IRQHandler
+                0x000000000000038c                SDIO_IRQHandler
+                0x0000000000000394                CAN0_IRQ0_IRQHandler
+                0x000000000000039c                CAN0_IRQ1_IRQHandler
+                0x00000000000003a4                CAN1_IRQ0_IRQHandler
+                0x00000000000003ac                CAN1_IRQ1_IRQHandler
+                0x00000000000003b4                USB1_IRQHandler
+                0x00000000000003bc                USB1_NEEDCLK_IRQHandler
+                0x00000000000003c4                ETHERNET_IRQHandler
+                0x00000000000003cc                ETHERNET_PMT_IRQHandler
+                0x00000000000003d4                ETHERNET_MACLP_IRQHandler
+                0x00000000000003dc                EEPROM_IRQHandler
+                0x00000000000003e4                LCD_IRQHandler
+                0x00000000000003ec                SHA_IRQHandler
+                0x00000000000003f4                SMARTCARD0_IRQHandler
+                0x00000000000003fc                SMARTCARD1_IRQHandler
+ .text          0x0000000000000404       0xe4 gcc/main.o
+                0x00000000000004a4                vApplicationTickHook
+                0x00000000000004cc                vApplicationMallocFailedHook
+                0x00000000000004d0                vApplicationStackOverflowHook
+                0x00000000000004d4                vApplicationIdleHook
+ .text.startup  0x00000000000004e8       0xcc gcc/main.o
+                0x00000000000004e8                main
+ .text          0x00000000000005b4       0xd4 gcc/board.o
+                0x00000000000005b4                BOARD_InitDebugConsole
+                0x00000000000005f4                BOARD_InitSDRAM
+ .text          0x0000000000000688      0x164 gcc/clock_config.o
+                0x0000000000000688                BOARD_BootClockFRO12M
+                0x00000000000006d4                BOARD_BootClockFROHF48M
+                0x0000000000000720                BOARD_BootClockFROHF96M
+                0x000000000000076c                BOARD_BootClockPLL180M
+ .text          0x00000000000007ec       0x1c gcc/pin_mux.o
+                0x00000000000007ec                BOARD_InitPins
+ .text          0x0000000000000808       0x9c gcc/list.o
+                0x0000000000000808                vListInitialise
+                0x0000000000000820                vListInitialiseItem
+                0x0000000000000828                vListInsertEnd
+                0x0000000000000848                vListInsert
+                0x000000000000087c                uxListRemove
+ .text          0x00000000000008a4      0x9ec gcc/queue.o
+                0x0000000000000938                xQueueGenericReset
+                0x00000000000009c8                xQueueGenericCreate
+                0x0000000000000a14                xQueueCreateCountingSemaphore
+                0x0000000000000a50                xQueueGenericSend
+                0x0000000000000bd0                xQueueCreateMutex
+                0x0000000000000bf4                xQueueGiveMutexRecursive
+                0x0000000000000c34                xQueueGenericSendFromISR
+                0x0000000000000cfc                xQueueGiveFromISR
+                0x0000000000000da8                xQueueGenericReceive
+                0x0000000000000f50                xQueueTakeMutexRecursive
+                0x0000000000000f94                xQueueReceiveFromISR
+                0x0000000000001034                xQueuePeekFromISR
+                0x00000000000010b0                uxQueueMessagesWaiting
+                0x00000000000010d8                uxQueueSpacesAvailable
+                0x0000000000001104                uxQueueMessagesWaitingFromISR
+                0x000000000000111c                vQueueDelete
+                0x0000000000001168                uxQueueGetQueueNumber
+                0x000000000000116c                vQueueSetQueueNumber
+                0x0000000000001170                ucQueueGetQueueType
+                0x0000000000001178                xQueueIsQueueEmptyFromISR
+                0x0000000000001198                xQueueIsQueueFullFromISR
+                0x00000000000011bc                vQueueAddToRegistry
+                0x00000000000011e4                pcQueueGetName
+                0x0000000000001214                vQueueUnregisterQueue
+                0x0000000000001248                vQueueWaitForMessageRestricted
+ .text.unlikely
+                0x0000000000001290       0x92 gcc/queue.o
+ *fill*         0x0000000000001322        0x2 ff
+ .text          0x0000000000001324     0x15e4 gcc/tasks.o
+                0x00000000000013e4                xTaskCreate
+                0x00000000000015ac                vTaskDelete
+                0x0000000000001680                eTaskGetState
+                0x00000000000016dc                uxTaskPriorityGet
+                0x0000000000001704                uxTaskPriorityGetFromISR
+                0x000000000000173c                vTaskPrioritySet
+                0x0000000000001814                vTaskResume
+                0x000000000000189c                xTaskResumeFromISR
+                0x0000000000001948                vTaskStartScheduler
+                0x00000000000019bc                vTaskEndScheduler
+                0x00000000000019dc                vTaskSuspendAll
+                0x00000000000019f0                xTaskGetTickCount
+                0x00000000000019fc                xTaskGetTickCountFromISR
+                0x0000000000001a0c                uxTaskGetNumberOfTasks
+                0x0000000000001a18                pcTaskGetName
+                0x0000000000001a3c                xTaskIncrementTick
+                0x0000000000001b3c                xTaskResumeAll
+                0x0000000000001c20                vTaskDelayUntil
+                0x0000000000001cbc                vTaskDelay
+                0x0000000000001d84                vTaskSwitchContext
+                0x0000000000001e18                vTaskSuspend
+                0x0000000000001ee8                vTaskPlaceOnEventList
+                0x0000000000001f1c                vTaskPlaceOnUnorderedEventList
+                0x0000000000001f70                vTaskPlaceOnEventListRestricted
+                0x0000000000001fb0                xTaskRemoveFromEventList
+                0x0000000000002028                xTaskRemoveFromUnorderedEventList
+                0x00000000000020a8                vTaskSetTimeOutState
+                0x00000000000020c4                xTaskCheckForTimeOut
+                0x0000000000002148                vTaskMissedYield
+                0x0000000000002158                uxTaskGetTaskNumber
+                0x0000000000002160                vTaskSetTaskNumber
+                0x0000000000002168                vTaskSetThreadLocalStoragePointer
+                0x0000000000002180                pvTaskGetThreadLocalStoragePointer
+                0x00000000000021a4                vTaskGetInfo
+                0x0000000000002290                uxTaskGetSystemState
+                0x000000000000238c                xTaskGetCurrentTaskHandle
+                0x0000000000002398                xTaskGetSchedulerState
+                0x00000000000023b8                vTaskPriorityInherit
+                0x0000000000002448                xTaskPriorityDisinherit
+                0x00000000000024f0                uxTaskResetEventItemValue
+                0x0000000000002508                pvTaskIncrementMutexHeldCount
+                0x0000000000002520                ulTaskNotifyTake
+                0x0000000000002588                xTaskNotifyWait
+                0x0000000000002614                xTaskGenericNotify
+                0x00000000000026f0                xTaskGenericNotifyFromISR
+                0x0000000000002804                vTaskNotifyGiveFromISR
+                0x00000000000028d8                xTaskNotifyStateClear
+ *fill*         0x0000000000002908        0x8 ff
+ .text          0x0000000000002910      0x320 gcc/port.o
+                0x000000000000296c                pxPortInitialiseStack
+                0x0000000000002998                SVC_Handler
+                0x00000000000029c4                xPortStartScheduler
+                0x0000000000002aac                vPortEndScheduler
+                0x0000000000002ad0                vPortEnterCritical
+                0x0000000000002b14                vPortExitCritical
+                0x0000000000002b3c                PendSV_Handler
+                0x0000000000002ba4                SysTick_Handler
+                0x0000000000002bd0                vPortValidateInterruptPriority
+ .text          0x0000000000002c30       0x9c gcc/heap_1.o
+                0x0000000000002c30                pvPortMalloc
+                0x0000000000002c90                vPortFree
+                0x0000000000002ca8                vPortInitialiseBlocks
+                0x0000000000002cb8                xPortGetFreeHeapSize
+ .text          0x0000000000002ccc      0x518 gcc/timers.o
+                0x0000000000002d58                xTimerCreateTimerTask
+                0x0000000000002da0                xTimerCreate
+                0x0000000000002de8                xTimerGenericCommand
+                0x0000000000003094                xTimerGetTimerDaemonTaskHandle
+                0x00000000000030b4                xTimerGetPeriod
+                0x00000000000030cc                xTimerGetExpiryTime
+                0x00000000000030e4                pcTimerGetName
+                0x00000000000030fc                xTimerIsTimerActive
+                0x0000000000003128                pvTimerGetTimerID
+                0x0000000000003150                vTimerSetTimerID
+                0x0000000000003178                xTimerPendFunctionCallFromISR
+                0x00000000000031a0                xTimerPendFunctionCall
+ .text          0x00000000000031e4     0x1908 gcc/fsl_clock.o
+                0x0000000000003638                CLOCK_AttachClk
+                0x0000000000003680                CLOCK_SetClkDiv
+                0x00000000000036a4                CLOCK_SetupFROClocking
+                0x0000000000003748                CLOCK_GetLcdClkIn
+                0x000000000000374c                CLOCK_GetFro12MFreq
+                0x0000000000003764                CLOCK_GetExtClkFreq
+                0x000000000000376c                CLOCK_GetWdtOscFreq
+                0x0000000000003780                CLOCK_GetFroHfFreq
+                0x00000000000037b4                CLOCK_GetMclkClkFreq
+                0x00000000000037ec                CLOCK_GetAdcClkFreq
+                0x0000000000003830                CLOCK_GetUsb0ClkFreq
+                0x0000000000003864                CLOCK_GetPllOutFreq
+                0x0000000000003870                CLOCK_GetAudioPllOutFreq
+                0x000000000000387c                CLOCK_GetUsbPllOutFreq
+                0x0000000000003888                CLOCK_GetOsc32KFreq
+                0x0000000000003890                CLOCK_GetCoreSysClkFreq
+                0x0000000000003924                CLOCK_GetClockOutClkFreq
+                0x00000000000039a4                CLOCK_GetSpifiClkFreq
+                0x00000000000039f4                CLOCK_GetUsb1ClkFreq
+                0x0000000000003a28                CLOCK_GetSctClkFreq
+                0x0000000000003a68                CLOCK_GetSdioClkFreq
+                0x0000000000003ab8                CLOCK_GetLcdClkFreq
+                0x0000000000003ae4                CLOCK_GetI2SMClkFreq
+                0x0000000000003ae8                CLOCK_GetAsyncApbClkFreq
+                0x0000000000003b08                CLOCK_GetFRGInputClock
+                0x0000000000003b54                CLOCK_SetFRGClock
+                0x0000000000003b98                CLOCK_GetFreq
+                0x0000000000003e78                CLOCK_GetFlexCommClkFreq
+                0x0000000000003ed4                CLOCK_SetFLASHAccessCyclesForFreq
+                0x0000000000003fd4                CLOCK_GetSystemPLLInClockRate
+                0x0000000000004010                CLOCK_GetAudioPLLInClockRate
+                0x000000000000402c                CLOCK_GetSystemPLLOutFromSetup
+                0x0000000000004090                CLOCK_GetUsbPLLOutFromSetup
+                0x00000000000040e8                CLOCK_GetAudioPLLOutFromSetup
+                0x0000000000004160                CLOCK_SetStoredPLLClockRate
+                0x000000000000416c                CLOCK_SetStoredAudioPLLClockRate
+                0x0000000000004178                CLOCK_SetStoredUsbPLLClockRate
+                0x0000000000004184                CLOCK_GetSystemPLLOutClockRate
+                0x00000000000041bc                CLOCK_GetAudioPLLOutClockRate
+                0x00000000000041f4                CLOCK_GetUsbPLLOutClockRate
+                0x0000000000004254                CLOCK_SetupPLLData
+                0x0000000000004278                CLOCK_SetupSystemPLLPrec
+                0x0000000000004360                CLOCK_SetupAudioPLLPrec
+                0x000000000000443c                CLOCK_SetupAudioPLLData
+                0x0000000000004474                CLOCK_SetPLLFreq
+                0x0000000000004544                CLOCK_SetAudioPLLFreq
+                0x0000000000004628                CLOCK_SetUsbPLLFreq
+                0x000000000000472c                CLOCK_SetupSystemPLLMult
+                0x0000000000004800                CLOCK_EnableUsbfs0DeviceClock
+                0x00000000000048b4                CLOCK_EnableUsbfs0HostClock
+                0x0000000000004974                CLOCK_EnableUsbhs0DeviceClock
+                0x0000000000004a30                CLOCK_EnableUsbhs0HostClock
+ .text          0x0000000000004aec       0xc0 gcc/fsl_reset.o
+                0x0000000000004aec                RESET_SetPeripheralReset
+                0x0000000000004b40                RESET_ClearPeripheralReset
+                0x0000000000004b98                RESET_PeripheralReset
+ .text          0x0000000000004bac      0x5ec gcc/fsl_emc.o
+                0x0000000000004be8                EMC_Init
+                0x0000000000004c38                EMC_DynamicMemInit
+                0x0000000000004fa0                EMC_StaticMemInit
+                0x0000000000005174                EMC_Deinit
+ .text.unlikely
+                0x0000000000005198       0x1c gcc/fsl_emc.o
+ .text          0x00000000000051b4      0xa0c gcc/fsl_usart.o
+                0x0000000000005220                USART_TransferHandleIRQ
+                0x00000000000054c0                USART_GetInstance
+                0x00000000000054e8                USART_TransferStartRingBuffer
+                0x0000000000005540                USART_TransferStopRingBuffer
+                0x0000000000005588                USART_Deinit
+                0x00000000000055c8                USART_GetDefaultConfig
+                0x0000000000005600                USART_SetBaudRate
+                0x000000000000567c                USART_Init
+                0x0000000000005760                USART_WriteBlocking
+                0x00000000000057a8                USART_ReadBlocking
+                0x0000000000005858                USART_TransferCreateHandle
+                0x0000000000005918                USART_TransferSendNonBlocking
+                0x0000000000005980                USART_TransferAbortSend
+                0x00000000000059c0                USART_TransferGetSendCount
+                0x0000000000005a08                USART_TransferReceiveNonBlocking
+                0x0000000000005b2c                USART_TransferAbortReceive
+                0x0000000000005b74                USART_TransferGetReceiveCount
+ .text          0x0000000000005bc0      0x350 gcc/fsl_flexcomm.o
+                0x0000000000005bdc                FLEXCOMM_GetInstance
+                0x0000000000005c04                FLEXCOMM_SetPeriph
+                0x0000000000005c8c                FLEXCOMM_Init
+                0x0000000000005cf8                FLEXCOMM_SetIRQHandler
+                0x0000000000005d30                FLEXCOMM0_DriverIRQHandler
+                0x0000000000005d60                FLEXCOMM1_DriverIRQHandler
+                0x0000000000005d90                FLEXCOMM2_DriverIRQHandler
+                0x0000000000005dc0                FLEXCOMM3_DriverIRQHandler
+                0x0000000000005df0                FLEXCOMM4_DriverIRQHandler
+                0x0000000000005e20                FLEXCOMM5_DriverIRQHandler
+                0x0000000000005e50                FLEXCOMM6_DriverIRQHandler
+                0x0000000000005e80                FLEXCOMM7_DriverIRQHandler
+                0x0000000000005eb0                FLEXCOMM8_DriverIRQHandler
+                0x0000000000005ee0                FLEXCOMM9_DriverIRQHandler
+ .text          0x0000000000005f10      0x8c8 gcc/fsl_debug_console.o
+                0x0000000000005f3c                DbgConsole_Init
+                0x0000000000005f8c                DbgConsole_Deinit
+                0x0000000000005fbc                DbgConsole_Putchar
+                0x0000000000005fe4                DbgConsole_Printf
+                0x00000000000062c0                DbgConsole_Scanf
+                0x0000000000006750                DbgConsole_Getchar
+                0x0000000000006784                _write
+                0x00000000000067b0                _read
+ .text          0x00000000000067d8      0x10c gcc/fsl_common.o
+                0x00000000000067d8                __assert_func
+                0x00000000000067f4                InstallIRQHandler
+                0x0000000000006848                EnableDeepSleepIRQ
+                0x0000000000006894                DisableDeepSleepIRQ
+ .text          0x00000000000068e4       0x38 gcc/fsl_tickless_rtc.o
+                0x00000000000068e4                vPortSetupTimerInterrupt
+ .text.POWER_SetVoltageForFreq
+                0x000000000000691c       0x34 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                0x000000000000691c                POWER_SetVoltageForFreq
+ .text.POWER_SetPLL
+                0x0000000000006950       0x1c ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                0x0000000000006950                POWER_SetPLL
+ .text.POWER_SetUsbPhy
+                0x000000000000696c       0x1c ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                0x000000000000696c                POWER_SetUsbPhy
+ .text.memcpy   0x0000000000006988        0x4 ../libs/libcr_c.a(memcpy.o)
+                0x0000000000006988                memcpy
+ .text.memset   0x000000000000698c        0x4 ../libs/libcr_c.a(memset.o)
+                0x000000000000698c                memset
+ .text.strlen   0x0000000000006990       0x4a ../libs/libcr_c.a(strlen.o)
+                0x0000000000006990                strlen
+ .text.__aeabi_division_uldivmod
+                0x00000000000069da      0x174 ../libs/libcr_eabihelpers.a(division_64.o)
+                0x00000000000069da                __aeabi_uldivmod
+                0x00000000000069de                __bhs_ldivmod1
+ .text.__aeabi_division_idiv0
+                0x0000000000006b4e        0x2 ../libs/libcr_eabihelpers.a(division_idiv0.o)
+                0x0000000000006b4e                __aeabi_idiv0
+ .text.__aeabi_memcpy
+                0x0000000000006b50       0x34 ../libs/libcr_eabihelpers.a(memcpy.o)
+                0x0000000000006b50                __aeabi_memcpy
+                0x0000000000006b5a                __aeabi_memcpy4
+                0x0000000000006b5a                __aeabi_memcpy8
+ .text.__aeabi_memset_lowlevel
+                0x0000000000006b84       0x32 ../libs/libcr_eabihelpers.a(memcpy.o)
+                0x0000000000006b84                __aeabi_lowlevel_memset
+ *(.rodata .rodata.* .constdata .constdata.*)
+ *fill*         0x0000000000006bb6        0x2 ff
+ .rodata.str1.4
+                0x0000000000006bb8       0x51 gcc/main.o
+ *fill*         0x0000000000006c09        0x3 ff
+ .rodata        0x0000000000006c0c       0x1c gcc/board.o
+                0x0000000000006c24                ExtClockIn
+ .rodata.str1.4
+                0x0000000000006c28       0x2b gcc/board.o
+ *fill*         0x0000000000006c53        0x1 ff
+ .rodata.str1.4
+                0x0000000000006c54        0x5 gcc/tasks.o
+ *fill*         0x0000000000006c59        0x3 ff
+ .rodata.str1.4
+                0x0000000000006c5c       0x10 gcc/timers.o
+ .rodata        0x0000000000006c6c       0x58 gcc/fsl_clock.o
+                0x0000000000006cb8                g_Lcd_Clk_In_Freq
+                0x0000000000006cbc                g_Ext_Clk_Freq
+                0x0000000000006cc0                g_I2S_Mclk_Freq
+ .rodata        0x0000000000006cc4       0x37 gcc/fsl_reset.o
+ *fill*         0x0000000000006cfb        0x1 ff
+ .rodata.str1.4
+                0x0000000000006cfc       0x54 gcc/fsl_reset.o
+ .rodata        0x0000000000006d50       0x46 gcc/fsl_emc.o
+ *fill*         0x0000000000006d96        0x2 ff
+ .rodata.str1.4
+                0x0000000000006d98       0xd1 gcc/fsl_emc.o
+                                         0xd9 (size before relaxing)
+ *fill*         0x0000000000006e69        0x3 ff
+ .rodata        0x0000000000006e6c      0x226 gcc/fsl_usart.o
+ *fill*         0x0000000000007092        0x2 ff
+ .rodata.str1.4
+                0x0000000000007094      0x1f6 gcc/fsl_usart.o
+ *fill*         0x000000000000728a        0x2 ff
+ .rodata        0x000000000000728c      0x176 gcc/fsl_flexcomm.o
+                0x00000000000073f8                kFlexcommIrqs
+ *fill*         0x0000000000007402        0x2 ff
+ .rodata.str1.4
+                0x0000000000007404      0x138 gcc/fsl_flexcomm.o
+                                        0x140 (size before relaxing)
+ .rodata.str1.4
+                0x000000000000753c       0x40 gcc/fsl_common.o
+                                         0x3e (size before relaxing)
+                0x000000000000757c                . = ALIGN (0x4)
+
+.glue_7         0x000000000000757c        0x0
+ .glue_7        0x000000000000757c        0x0 linker stubs
+
+.glue_7t        0x000000000000757c        0x0
+ .glue_7t       0x000000000000757c        0x0 linker stubs
+
+.vfp11_veneer   0x000000000000757c        0x0
+ .vfp11_veneer  0x000000000000757c        0x0 linker stubs
+
+.v4_bx          0x000000000000757c        0x0
+ .v4_bx         0x000000000000757c        0x0 linker stubs
+
+.iplt           0x000000000000757c        0x0
+ .iplt          0x000000000000757c        0x0 gcc/startup_LPC54608.o
+
+.rel.dyn        0x000000000000757c        0x0
+ .rel.iplt      0x000000000000757c        0x0 gcc/startup_LPC54608.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000000000000757c                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000000000000757c                __exidx_end = .
+                0x000000000000757c                _etext = .
+
+.m_usb_data
+ *(m_usb_global)
+
+.data_RAM2      0x0000000004000000        0x0 load address 0x000000000000757c
+ FILL mask 0xff
+                [!provide]                        PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$SRAMX)
+ *(.data.$RAM2*)
+ *(.data.$SRAMX*)
+                0x0000000004000000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_data_RAM2, .)
+
+.data_RAM3      0x0000000040100000        0x0 load address 0x000000000000757c
+ FILL mask 0xff
+                [!provide]                        PROVIDE (__start_data_RAM3, .)
+ *(.ramfunc.$RAM3)
+ *(.ramfunc.$USB_RAM)
+ *(.data.$RAM3*)
+ *(.data.$USB_RAM*)
+                0x0000000040100000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_data_RAM3, .)
+
+.data_RAM4      0x00000000a0000000        0x0 load address 0x000000000000757c
+ FILL mask 0xff
+                [!provide]                        PROVIDE (__start_data_RAM4, .)
+ *(.ramfunc.$RAM4)
+ *(.ramfunc.$BOARD_SDRAM)
+ *(.data.$RAM4*)
+ *(.data.$BOARD_SDRAM*)
+                0x00000000a0000000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_data_RAM4, .)
+
+.uninit_RESERVED
+                0x0000000020000000        0x0
+ *(.bss.$RESERVED*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _end_uninit_RESERVED = .
+
+.data           0x0000000020000000        0x8 load address 0x000000000000757c
+ FILL mask 0xff
+                0x0000000020000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+ .data          0x0000000020000000        0x4 gcc/port.o
+ .data          0x0000000020000004        0x4 gcc/system_LPC54608.o
+                0x0000000020000004                SystemCoreClock
+                0x0000000020000008                . = ALIGN (0x4)
+                0x0000000020000008                _edata = .
+
+.igot.plt       0x0000000020000008        0x0 load address 0x0000000000007584
+ .igot.plt      0x0000000020000008        0x0 gcc/startup_LPC54608.o
+
+.bss_RAM2       0x0000000004000000        0x0
+                [!provide]                        PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$SRAMX*)
+                0x0000000004000000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                        PROVIDE (__end_bss_RAM2, .)
+
+.bss_RAM3       0x0000000040100000        0x0
+                [!provide]                        PROVIDE (__start_bss_RAM3, .)
+ *(.bss.$RAM3*)
+ *(.bss.$USB_RAM*)
+                0x0000000040100000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                        PROVIDE (__end_bss_RAM3, .)
+
+.bss_RAM4       0x00000000a0000000        0x0
+                [!provide]                        PROVIDE (__start_bss_RAM4, .)
+ *(.bss.$RAM4*)
+ *(.bss.$BOARD_SDRAM*)
+                0x00000000a0000000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                        PROVIDE (__end_bss_RAM4, .)
+
+.bss            0x0000000020000008     0x2a60
+                0x0000000020000008                _bss = .
+ *(.bss*)
+ .bss           0x0000000020000008       0x18 gcc/main.o
+ .bss           0x0000000020000020      0x104 gcc/tasks.o
+                0x000000002000002c                pxCurrentTCB
+ .bss           0x0000000020000124        0x8 gcc/port.o
+ .bss           0x000000002000012c     0x2808 gcc/heap_1.o
+ .bss           0x0000000020002934       0x3c gcc/timers.o
+ .bss           0x0000000020002970       0x20 gcc/fsl_clock.o
+                0x0000000020002970                gFinHzCache
+                0x0000000020002978                gFoutHzCache
+                0x0000000020002980                gPllSetupCacheIdx
+ .bss           0x0000000020002990       0x50 gcc/fsl_flexcomm.o
+ .bss           0x00000000200029e0       0x10 gcc/fsl_debug_console.o
+ *(COMMON)
+ COMMON         0x00000000200029f0       0x40 gcc/queue.o
+                0x00000000200029f0                xQueueRegistry
+ COMMON         0x0000000020002a30       0x38 gcc/fsl_clock.o
+                0x0000000020002a30                gPllSetupCacheStruct
+                0x0000000020002a68                . = ALIGN (0x4)
+                0x0000000020002a68                _ebss = .
+                [!provide]                        PROVIDE (end, .)
+
+.noinit_RAM2    0x0000000004000000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$SRAMX*)
+                0x0000000004000000                . = ALIGN (0x4)
+
+.noinit_RAM3    0x0000000040100000        0x0
+ *(.noinit.$RAM3*)
+ *(.noinit.$USB_RAM*)
+                0x0000000040100000                . = ALIGN (0x4)
+
+.noinit_RAM4    0x00000000a0000000        0x0
+ *(.noinit.$RAM4*)
+ *(.noinit.$BOARD_SDRAM*)
+                0x00000000a0000000                . = ALIGN (0x4)
+
+.noinit         0x0000000020002a68        0x0
+                0x0000000020002a68                _noinit = .
+ *(.noinit*)
+                0x0000000020002a68                . = ALIGN (0x4)
+                0x0000000020002a68                _end_noinit = .
+
+.heap           0x0000000020002a68     0x1000
+                0x0000000020002a68                _pvHeapStart = .
+                0x0000000020003a68                . = (. + 0x1000)
+ *fill*         0x0000000020002a68     0x1000 
+                0x0000000020003a68                . = ALIGN (0x4)
+                0x0000000020003a68                _pvHeapLimit = .
+
+.heap2stackfill
+                0x0000000020003a68     0x1000
+                0x0000000020004a68                . = (. + 0x1000)
+ *fill*         0x0000000020003a68     0x1000 
+
+.stack          0x0000000020027000        0x0
+                0x0000000020027000                _vStackBase = .
+                0x0000000020027000                . = ALIGN (0x4)
+                0x0000000020028000                _vStackTop = (. + 0x1000)
+                0xffffffffdffd76f2                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+OUTPUT(gcc/RTOSDemo.axf elf32-littlearm)
+
+.comment        0x0000000000000000       0xed
+ .comment       0x0000000000000000       0x7f gcc/startup_LPC54608.o
+                                         0x80 (size before relaxing)
+ .comment       0x000000000000007f       0x80 gcc/main.o
+ .comment       0x000000000000007f       0x80 gcc/board.o
+ .comment       0x000000000000007f       0x80 gcc/clock_config.o
+ .comment       0x000000000000007f       0x80 gcc/pin_mux.o
+ .comment       0x000000000000007f       0x80 gcc/list.o
+ .comment       0x000000000000007f       0x80 gcc/queue.o
+ .comment       0x000000000000007f       0x80 gcc/tasks.o
+ .comment       0x000000000000007f       0x80 gcc/port.o
+ .comment       0x000000000000007f       0x80 gcc/heap_1.o
+ .comment       0x000000000000007f       0x80 gcc/timers.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_clock.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_reset.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_emc.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_usart.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_flexcomm.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_debug_console.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_common.o
+ .comment       0x000000000000007f       0x80 gcc/system_LPC54608.o
+ .comment       0x000000000000007f       0x80 gcc/fsl_tickless_rtc.o
+ .comment       0x000000000000007f       0x6e ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                                         0x6f (size before relaxing)
+ .comment       0x00000000000000ed       0x6f ../libs/libcr_c.a(memcpy.o)
+ .comment       0x00000000000000ed       0x6f ../libs/libcr_c.a(memset.o)
+ .comment       0x00000000000000ed       0x6f ../libs/libcr_c.a(strlen.o)
+
+.ARM.attributes
+                0x0000000000000000       0x37
+ .ARM.attributes
+                0x0000000000000000       0x39 gcc/startup_LPC54608.o
+ .ARM.attributes
+                0x0000000000000039       0x39 gcc/main.o
+ .ARM.attributes
+                0x0000000000000072       0x39 gcc/board.o
+ .ARM.attributes
+                0x00000000000000ab       0x39 gcc/clock_config.o
+ .ARM.attributes
+                0x00000000000000e4       0x39 gcc/pin_mux.o
+ .ARM.attributes
+                0x000000000000011d       0x39 gcc/list.o
+ .ARM.attributes
+                0x0000000000000156       0x39 gcc/queue.o
+ .ARM.attributes
+                0x000000000000018f       0x39 gcc/tasks.o
+ .ARM.attributes
+                0x00000000000001c8       0x39 gcc/port.o
+ .ARM.attributes
+                0x0000000000000201       0x39 gcc/heap_1.o
+ .ARM.attributes
+                0x000000000000023a       0x39 gcc/timers.o
+ .ARM.attributes
+                0x0000000000000273       0x39 gcc/fsl_clock.o
+ .ARM.attributes
+                0x00000000000002ac       0x39 gcc/fsl_reset.o
+ .ARM.attributes
+                0x00000000000002e5       0x39 gcc/fsl_emc.o
+ .ARM.attributes
+                0x000000000000031e       0x39 gcc/fsl_usart.o
+ .ARM.attributes
+                0x0000000000000357       0x39 gcc/fsl_flexcomm.o
+ .ARM.attributes
+                0x0000000000000390       0x39 gcc/fsl_debug_console.o
+ .ARM.attributes
+                0x00000000000003c9       0x39 gcc/fsl_common.o
+ .ARM.attributes
+                0x0000000000000402       0x39 gcc/system_LPC54608.o
+ .ARM.attributes
+                0x000000000000043b       0x39 gcc/fsl_tickless_rtc.o
+ .ARM.attributes
+                0x0000000000000474       0x39 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+ .ARM.attributes
+                0x00000000000004ad       0x39 ../libs/libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x00000000000004e6       0x39 ../libs/libcr_c.a(memset.o)
+ .ARM.attributes
+                0x000000000000051f       0x39 ../libs/libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x0000000000000558       0x21 ../libs/libcr_eabihelpers.a(division_64.o)
+ .ARM.attributes
+                0x0000000000000579       0x21 ../libs/libcr_eabihelpers.a(division_idiv0.o)
+ .ARM.attributes
+                0x000000000000059a       0x21 ../libs/libcr_eabihelpers.a(memcpy.o)
+
+.debug_info     0x0000000000000000     0x1593
+ .debug_info    0x0000000000000000     0x1593 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_abbrev   0x0000000000000000      0x35a
+ .debug_abbrev  0x0000000000000000      0x35a ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_loc      0x0000000000000000      0x504
+ .debug_loc     0x0000000000000000      0x504 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_aranges  0x0000000000000000       0x78
+ .debug_aranges
+                0x0000000000000000       0x78 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_ranges   0x0000000000000000       0xb0
+ .debug_ranges  0x0000000000000000       0xb0 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_line     0x0000000000000000      0x338
+ .debug_line    0x0000000000000000      0x338 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+
+.debug_str      0x0000000000000000      0xce7
+ .debug_str     0x0000000000000000      0xce7 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
+                                        0xd32 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x114
+ .debug_frame   0x0000000000000000      0x114 ../sdk/SDK_2.2_LPCXpresso54608/devices/LPC54608/mcuxpresso/libfsl_power_lib.a(fsl_power_lib.o)
