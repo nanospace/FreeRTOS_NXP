@@ -72,7 +72,9 @@ SECTIONS
     {
         FILL(0xff)
         __vectors_start__ = ABSOLUTE(.) ;
+        __VECTOR_TABLE = ABSOLUTE(.);
         KEEP(*(.isr_vector))
+        __RAM_VECTOR_TABLE_SIZE_BYTES = . - __VECTOR_TABLE;
         /* Global Section Table */
         . = ALIGN(4) ;
         __section_table_start = .;
@@ -278,6 +280,7 @@ SECTIONS
 		_vStackBase = .;
 		. = ALIGN(4);
 		_vStackTop = . + 0x1000;
+                __VECTOR_RAM = ABSOLUTE(.);
 	} > SRAM_0_1_2_3
 
     /* ## Create checksum value (used in startup) ## */

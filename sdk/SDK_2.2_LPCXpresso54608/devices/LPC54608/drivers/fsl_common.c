@@ -83,10 +83,16 @@ uint32_t InstallIRQHandler(IRQn_Type irq, uint32_t irqHandler)
     extern uint32_t __VECTOR_TABLE[];
     extern uint32_t __VECTOR_RAM[];
 #elif defined(__GNUC__)
+    extern uint32_t __RAM_VECTOR_TABLE_SIZE_BYTES[];
     extern uint32_t __VECTOR_TABLE[];
     extern uint32_t __VECTOR_RAM[];
-    extern uint32_t __RAM_VECTOR_TABLE_SIZE_BYTES[];
     uint32_t __RAM_VECTOR_TABLE_SIZE = (uint32_t)(__RAM_VECTOR_TABLE_SIZE_BYTES);
+
+/*#define __VECTOR_TABLE _vectors_start_
+#define __VECTOR_RAM  _vStackTop
+#define __RAM_VECTOR_TABLE_SIZE_BYTES _section_table_start - _vectors_start_
+*/
+
 #endif /* defined(__CC_ARM) */
     uint32_t n;
     uint32_t ret;

@@ -133,7 +133,7 @@ ${COMPILER}/%.o: %.c
 	 else                                                    \
 	     echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} -c ${<}; \
 	 fi
-	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} -c ${<}
+	@${CC} ${CFLAGS} -D${COMPILER} -D__GNUC__ -o ${@} -c ${<}
 ifeq (${COMPILER}, rvds)
 	@mv -f ${notdir ${@:.o=.d}} ${COMPILER}
 endif
